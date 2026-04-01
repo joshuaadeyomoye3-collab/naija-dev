@@ -1,0 +1,45 @@
+<svg width="1200" height="400" viewBox="0 0 680 240" xmlns="http://www.w3.org/2000/svg">
+
+  <rect x="0" y="0" width="680" height="240" fill="#0d1117"/>
+  <rect x="0" y="0" width="6" height="240" fill="#1a7a3c"/>
+  <rect x="674" y="0" width="6" height="240" fill="#1a7a3c"/>
+
+  <line x1="0" y1="60"  x2="680" y2="60"  stroke="#1a7a3c" stroke-width="0.4" opacity="0.3"/>
+  <line x1="0" y1="180" x2="680" y2="180" stroke="#1a7a3c" stroke-width="0.4" opacity="0.3"/>
+
+  <text x="-10" y="215" font-family="Georgia, serif" font-size="220" font-weight="700" fill="#1a7a3c" opacity="0.08">{</text>
+  <text x="560" y="215" font-family="Georgia, serif" font-size="220" font-weight="700" fill="#1a7a3c" opacity="0.08">}</text>
+
+  <rect x="26" y="22" width="160" height="22" rx="4" fill="#1a7a3c"/>
+  <text x="106" y="37" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">NIGERIA'S TECH SUMMIT</text>
+
+  <text x="26" y="100" font-family="Arial, sans-serif" font-size="50" font-weight="700" fill="#ffffff">NaijaDevs</text>
+  <text x="26" y="152" font-family="Arial, sans-serif" font-size="50" font-weight="700" fill="#1a7a3c">Conference 2026</text>
+
+  <rect x="26" y="166" width="628" height="2" rx="1" fill="#1a7a3c" opacity="0.4"/>
+
+  <text x="26"  y="190" font-family="Arial, sans-serif" font-size="13" fill="#aaaaaa">September 15-17, 2026</text>
+  <rect x="222" y="178" width="1.5" height="16" fill="#1a7a3c" opacity="0.5"/>
+  <text x="232" y="190" font-family="Arial, sans-serif" font-size="13" fill="#aaaaaa">Landmark Centre, Victoria Island, Lagos</text>
+  <rect x="537" y="178" width="1.5" height="16" fill="#1a7a3c" opacity="0.5"/>
+  <text x="547" y="190" font-family="Arial, sans-serif" font-size="13" fill="#aaaaaa">Nigeria</text>
+
+  <text x="26" y="218" font-family="Arial, sans-serif" font-size="12" fill="#1a7a3c">Build. Connect. Innovate.</text>
+
+  <rect x="440" y="22" width="100" height="56" rx="6" fill="#1a7a3c" opacity="0.15"/>
+  <text x="490" y="46" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#1a7a3c" text-anchor="middle">1,000+</text>
+  <text x="490" y="66" font-family="Arial, sans-serif" font-size="11" fill="#aaaaaa" text-anchor="middle">Attendees</text>
+
+  <rect x="552" y="22" width="100" height="56" rx="6" fill="#1a7a3c" opacity="0.15"/>
+  <text x="602" y="46" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#1a7a3c" text-anchor="middle">40+</text>
+  <text x="602" y="66" font-family="Arial, sans-serif" font-size="11" fill="#aaaaaa" text-anchor="middle">Talks</text>
+
+  <rect x="440" y="90" width="100" height="56" rx="6" fill="#1a7a3c" opacity="0.15"/>
+  <text x="490" y="114" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#1a7a3c" text-anchor="middle">6</text>
+  <text x="490" y="134" font-family="Arial, sans-serif" font-size="11" fill="#aaaaaa" text-anchor="middle">Tracks</text>
+
+  <rect x="552" y="90" width="100" height="56" rx="6" fill="#1a7a3c" opacity="0.15"/>
+  <text x="602" y="114" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#1a7a3c" text-anchor="middle">3</text>
+  <text x="602" y="134" font-family="Arial, sans-serif" font-size="11" fill="#aaaaaa" text-anchor="middle">Days</text>
+
+</svg>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Register for NaijaDevs Conference 2026 — secure your ticket today." />
+  <title>Register — NaijaDevs Conference 2026</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+
+  <!-- ===================== HEADER & NAV ===================== -->
+  <header>
+    <img src="images/logo.svg" alt="NaijaDevs Conference Logo" width="120" height="60" />
+    <h1>NaijaDevs Conference 2026</h1>
+
+    <nav>
+      <ul>
+        <li><a href="index.html" title="Homepage"> Home</a></li>
+        <li><a href="speakers.html" title="Speakers and Schedule"> Speakers &amp; Schedule</a></li>
+        <li><a href="register.html" title="Register for the conference"> Register</a></li>
+        <li><a href="venue.html" title="Venue and travel information"> Venue &amp; Travel</a></li>
+        <li><a href="confirmation.html" title="Registration confirmation"> Confirmation</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <hr />
+
+  <main>
+    <section id="register">
+      <h2>Register for NaijaDevs Conference 2026</h2>
+      <p>
+        Secure your spot at Nigeria's biggest developer conference. <strong>Early Bird tickets at
+        &#8358;45,000 are almost gone!</strong>
+        <br />
+        Fill in the form below. All fields marked <strong>*</strong> are required.
+      </p>
+
+      <!-- Ticket Availability -->
+      <p>
+        <strong>Ticket Availability:</strong><br />
+        <meter id="ticket-meter" value="680" min="0" max="1000" low="200" high="800" optimum="500">
+          680 out of 1000 tickets sold
+        </meter>
+        <small> 680 / 1000 tickets sold — <strong>320 remaining</strong></small>
+      </p>
+
+      <!-- Registration Progress -->
+      <p>
+        <strong>Form Completion:</strong><br />
+        <progress id="form-progress" value="0" max="100">0%</progress>
+        <small> Complete all sections to submit</small>
+      </p>
+
+      <hr />
+
+      <!--
+        FORM: submits to confirmation.html using GET method
+        so values appear in URL, demonstrating the method attribute
+      -->
+      <form action="confirmation.html" method="GET">
+
+        <!-- ===== SECTION 1: Personal Information ===== -->
+        <fieldset>
+          <legend>👤 Personal Information</legend>
+
+          <p>
+            <label for="fullname">Full Name <strong>*</strong></label><br />
+            <input
+              type="text"
+              id="fullname"
+              name="fullname"
+              placeholder="e.g. Amara Obi-Johnson"
+              required
+              minlength="3"
+              maxlength="100"
+              title="Enter your full legal name"
+            />
+          </p>
+
+          <p>
+            <label for="email">Email Address <strong>*</strong></label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="amara@example.com"
+              required
+              title="We'll send your ticket confirmation here"
+            />
+          </p>
+
+          <p>
+            <label for="phone">Phone Number <strong>*</strong></label><br />
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="+2348012345678"
+              pattern="\+?[0-9]{10,14}"
+              title="Enter a valid Nigerian phone number, e.g. +2348012345678"
+              required
+            />
+            <small> Format: +234XXXXXXXXXX</small>
+          </p>
+
+          <p>
+            <label for="dob">Date of Birth</label><br />
+            <input
+              type="date"
+              id="dob"
+              name="dob"
+              min="1950-01-01"
+              max="2008-01-01"
+              title="We ask this only for age verification for the after-party"
+            />
+          </p>
+
+          <p>
+            <label for="photo">Profile Photo (for your badge)</label><br />
+            <input
+              type="file"
+              id="photo"
+              name="photo"
+              accept="image/*"
+              title="Upload a clear headshot — it will appear on your conference badge"
+            />
+            <small> JPG, PNG or GIF, max 2MB</small>
+          </p>
+
+          <p>
+            <label for="badge-colour">Pick Your Badge Colour </label><br />
+            <input
+              type="color"
+              id="badge-colour"
+              name="badge_colour"
+              value="#006400"
+              title="This colour will be used to personalise your name badge"
+            />
+          </p>
+
+          <!-- Hidden field -->
+          <input type="hidden" name="conference_year" value="2026" />
+          <input type="hidden" name="source" value="website" />
+        </fieldset>
+
+        <br />
+
+        <!-- ===== SECTION 2: Travel & Location ===== -->
+        <fieldset>
+          <legend> Travel Details</legend>
+
+          <p>
+            <label for="city">Which city are you travelling from? <strong>*</strong></label><br />
+            <select id="city" name="city" required>
+              <option value="">-- Select your city --</option>
+
+              <optgroup label="South-West">
+                <option value="lagos">Lagos</option>
+                <option value="ibadan">Ibadan</option>
+                <option value="abeokuta">Abeokuta</option>
+                <option value="akure">Akure</option>
+                <option value="ado-ekiti">Ado-Ekiti</option>
+              </optgroup>
+
+              <optgroup label="South-East">
+                <option value="enugu">Enugu</option>
+                <option value="onitsha">Onitsha</option>
+                <option value="owerri">Owerri</option>
+                <option value="umuahia">Umuahia</option>
+              </optgroup>
+
+              <optgroup label="South-South">
+                <option value="port-harcourt">Port Harcourt</option>
+                <option value="benin-city">Benin City</option>
+                <option value="warri">Warri</option>
+                <option value="calabar">Calabar</option>
+              </optgroup>
+
+              <optgroup label="North">
+                <option value="abuja">Abuja (FCT)</option>
+                <option value="kano">Kano</option>
+                <option value="kaduna">Kaduna</option>
+                <option value="jos">Jos</option>
+                <option value="maiduguri">Maiduguri</option>
+              </optgroup>
+
+              <optgroup label="Diaspora">
+                <option value="uk">United Kingdom</option>
+                <option value="us">United States</option>
+                <option value="canada">Canada</option>
+                <option value="other">Other (International)</option>
+              </optgroup>
+            </select>
+          </p>
+        </fieldset>
+
+        <br />
+
+        <!-- ===== SECTION 3: Ticket Type ===== -->
+        <fieldset>
+          <legend> Ticket Type</legend>
+          <p>Select the ticket that works for you:</p>
+
+          <p>
+            <input type="radio" id="early-bird" name="ticket_type" value="early_bird" required />
+            <label for="early-bird">
+              <strong>Early Bird</strong> — &#8358;45,000
+              <small>(Limited. Includes all talks, meals, and conference bag)</small>
+            </label>
+          </p>
+
+          <p>
+            <input type="radio" id="regular" name="ticket_type" value="regular" />
+            <label for="regular">
+              <strong>Regular</strong> — &#8358;75,000
+              <small>(Full access to all sessions and workshops)</small>
+            </label>
+          </p>
+
+          <p>
+            <input type="radio" id="vip" name="ticket_type" value="vip" />
+            <label for="vip">
+              <strong>VIP</strong> — &#8358;150,000
+              <small>(All of Regular + Speaker dinner, lounge access, and 1-on-1 mentoring session)</small>
+            </label>
+          </p>
+        </fieldset>
+
+        <br />
+
+        <!-- ===== SECTION 4: Interests & Experience ===== -->
+        <fieldset>
+          <legend> Your Tech Interests</legend>
+          <p>Which tracks are you most interested in? <em>(Select all that apply)</em></p>
+
+          <p>
+            <input type="checkbox" id="interest-frontend" name="interests" value="frontend" />
+            <label for="interest-frontend">Frontend Development</label>
+          </p>
+
+          <p>
+            <input type="checkbox" id="interest-backend" name="interests" value="backend" />
+            <label for="interest-backend">Backend &amp; <abbr title="Application Programming Interface">API</abbr> Design</label>
+          </p>
+
+          <p>
+            <input type="checkbox" id="interest-mobile" name="interests" value="mobile" />
+            <label for="interest-mobile">Mobile Development</label>
+          </p>
+
+          <p>
+            <input type="checkbox" id="interest-ai" name="interests" value="ai_ml" />
+            <label for="interest-ai"><abbr title="Artificial Intelligence">AI</abbr> / <abbr title="Machine Learning">ML</abbr></label>
+          </p>
+
+          <p>
+            <input type="checkbox" id="interest-devops" name="interests" value="devops" />
+            <label for="interest-devops">DevOps &amp; <abbr title="Continuous Integration / Continuous Deployment">CI/CD</abbr></label>
+          </p>
+
+          <p>
+            <input type="checkbox" id="interest-cloud" name="interests" value="cloud" />
+            <label for="interest-cloud">Cloud Infrastructure</label>
+          </p>
+
+          <br />
+
+          <!-- Primary Language using datalist -->
+          <p>
+            <label for="language">Primary Programming Language</label><br />
+            <input
+              type="text"
+              id="language"
+              name="language"
+              list="languages-list"
+              placeholder="Start typing your language..."
+            />
+            <datalist id="languages-list">
+              <option value="JavaScript" />
+              <option value="TypeScript" />
+              <option value="Python" />
+              <option value="Go" />
+              <option value="Rust" />
+              <option value="Java" />
+              <option value="Kotlin" />
+              <option value="Swift" />
+              <option value="Dart (Flutter)" />
+              <option value="PHP" />
+              <option value="Ruby" />
+              <option value="C#" />
+              <option value="C++" />
+              <option value="Solidity" />
+            </datalist>
+          </p>
+
+          <!-- Experience Level (range) -->
+          <p>
+            <label for="exp-level">Experience Level (1 = Beginner, 10 = Expert)</label><br />
+            <input
+              type="range"
+              id="exp-level"
+              name="experience_level"
+              min="1"
+              max="10"
+              step="1"
+              value="5"
+            />
+            <small> Slide to select (1–10)</small>
+          </p>
+
+          <!-- Years of experience (number) -->
+          <p>
+            <label for="exp-years">Years of Coding Experience</label><br />
+            <input
+              type="number"
+              id="exp-years"
+              name="experience_years"
+              min="0"
+              max="40"
+              placeholder="e.g. 3"
+            />
+          </p>
+        </fieldset>
+
+        <br />
+
+        <!-- ===== SECTION 5: Message ===== -->
+        <fieldset>
+          <legend> Your Message</legend>
+
+          <p>
+            <label for="learn-goals">What do you hope to learn at NaijaDevs 2026?</label><br />
+            <textarea
+              id="learn-goals"
+              name="learn_goals"
+              rows="5"
+              cols="50"
+              placeholder="Tell us what you're hoping to take away from the conference — topics, skills, connections..."
+              maxlength="1000"
+            ></textarea>
+          </p>
+
+          <!-- Output element (display calculated ticket price) -->
+          <p>
+            <label for="ticket-cost-display">Estimated Ticket Cost:</label><br />
+            <output id="ticket-cost-display" name="ticket_cost" for="ticket_type">
+              Select a ticket type above to see the price.
+            </output>
+          </p>
+        </fieldset>
+
+        <br />
+
+        <!-- ===== SECTION 6: Submit ===== -->
+        <fieldset>
+          <legend> Submit Your Registration</legend>
+
+          <p>
+            By submitting this form you agree to our
+            <a href="#" target="_blank" rel="noopener">Terms and Conditions</a>
+            and
+            <a href="#" target="_blank" rel="noopener">Privacy Policy</a>.
+          </p>
+
+          <p>
+            <button type="submit"> Complete Registration</button>
+            &nbsp;
+            <button type="reset"> Clear Form</button>
+          </p>
+        </fieldset>
+
+      </form>
+
+    </section>
+  </main>
+
+  <hr />
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <p>&copy; 2026 NaijaDevs Conference. All rights reserved.</p>
+    <p>
+       <a href="mailto:hello@naijadevs.ng">hello@naijadevs.ng</a> &nbsp;|&nbsp;
+       <a href="tel:+2348166879539">+234 816 687 9539</a>
+    </p>
+    <address>
+      Landmark Centre, Water Corporation Drive, Victoria Island, Lagos, Nigeria.
+    </address>
+    <p><small>Built with &hearts; by Nigerian developers, for Nigerian developers.</small></p>
+  </footer>
+
+</body>
+</html>
